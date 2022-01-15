@@ -1,0 +1,8 @@
+{
+  "name": "svelte-storages",
+  "version": "0.0.1",
+  "description": "Wrappers around storages",
+  "main": "index.js",
+  "author": "istudyatuni",
+  "license": "MIT"
+}
