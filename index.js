@@ -1,3 +1,7 @@
-const hello = 'hello!'
+import localStore from './stores/sessionStore.js'
+import sessionStore from './stores/sessionStore.js'
 
-export default hello
+export {
+	localStore,
+	sessionStore,
+}
