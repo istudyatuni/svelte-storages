@@ -10,9 +10,9 @@ Currently supported storages:
 ## Installation
 
 ```bash
-npm i -D git+https://github.com/istudyatuni/svelte-storages.git
+npm i -D svelte-storages
 # or
-yarn add -D git+https://github.com/istudyatuni/svelte-storages.git
+yarn add -D svelte-storages
 ```
 
 ## Usage
