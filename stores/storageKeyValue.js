@@ -6,7 +6,7 @@ import { writable } from 'svelte/store'
  * @param  {Object}                      initial Initial object
  * @return {{ subscribe, set, delete }}          Writable store
  */
-export function storageKeyValue(name, storage, initial = {}) {
+export default function storageKeyValue(name, storage, initial = {}) {
 	if (![localStorage, sessionStorage].includes(storage)) {
 		throw 'Incorrect storage'
 	}
