@@ -24,6 +24,6 @@ import storageKeyValue from './storageKeyValue.js'
  * @param  {Object}                      initial Initial object
  * @return {{ subscribe, set, delete }}          Writable store
  */
-export default function sessionStore(name, initial = {}) {
+export default function sessionStore(name, initial) {
 	return storageKeyValue(name, sessionStorage, initial)
 }

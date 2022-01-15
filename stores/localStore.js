@@ -24,6 +24,6 @@ import storageKeyValue from './storageKeyValue.js'
  * @param  {Object}                      initial Initial object
  * @return {{ subscribe, set, delete }}          Writable store
  */
-export default function localStore(name, initial = {}) {
+export default function localStore(name, initial) {
 	return storageKeyValue(name, localStorage, initial)
 }
