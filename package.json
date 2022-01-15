@@ -5,10 +5,14 @@
   "main": "index.js",
   "author": "istudyatuni",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write --plugin-search-dir=. ./**/*.js"
+  },
   "peerDependencies": {
     "svelte": "^3.46.2"
   },
   "devDependencies": {
+    "prettier": "^2.5.1",
     "svelte": "^3.46.2"
   }
 }
