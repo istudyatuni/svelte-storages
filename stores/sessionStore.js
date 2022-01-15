@@ -1,7 +1,7 @@
 import storageKeyValue from './storageKeyValue.js'
 
 /**
- * Writable store based on sessionStorage
+ * Writable key-value store based on sessionStorage
  *
  * Example usage:
  *

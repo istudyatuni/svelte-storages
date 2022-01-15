@@ -1,7 +1,7 @@
 import storageKeyValue from './storageKeyValue.js'
 
 /**
- * Writable store based on localStorage
+ * Writable key-value store based on localStorage
  *
  * Example usage:
  *
