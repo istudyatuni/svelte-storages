@@ -1,9 +1,16 @@
 {
   "name": "svelte-storages",
   "version": "0.0.2",
-  "description": "Wrappers around storages",
+  "description": "Svelte store wrappers around storages",
   "main": "index.js",
-  "author": "istudyatuni",
+  "author": {
+    "name": "Ilia Galiev",
+    "url": "https://github.com/istudyatuni"
+  },
+  "bugs": "https://github.com/istudyatuni/svelte-storages/issues",
+  "homepage": "https://github.com/istudyatuni/svelte-storages",
+  "repository": "github:istudyatuni/svelte-storages",
+  "keywords": ["svelte"],
   "license": "MIT",
   "scripts": {
     "format": "prettier --write --plugin-search-dir=. ./**/*.js"

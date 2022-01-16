@@ -7,6 +7,10 @@ Currently supported storages:
 - `localStorage`
 - `sessionStorage`
 
+Planning:
+
+- `indexedDB`
+
 ## Installation
 
 ```bash
@@ -18,18 +22,34 @@ yarn add -D svelte-storages
 ## Usage
 
 ```js
-import { get } from 'svelte/store'
-import { sessionStore } from 'svelte-storages'
+// store.js
+import { localStore } from 'svelte-storages'
 
-const store = sessionStore('dates')
-
-dates.set('key', value)
-
-console.log(get(dates).key)
+export const dates = localStore('dates')
 ```
 
-Or, inside component
+```js
+import { get } from 'svelte/store'
+import { dates } from './store.js'
 
-```xml
+dates.set('key', 'value')
+console.log(get(dates).key) // -> value
+```
+
+Or, inside the component
+```html
+<script context="module">
+  import { dates } from './store.js'
+</script>
+
 <p>{$dates.key}</p>
 ```
+
+## API
+
+`localStore` - wrapper around localStorage, `sessionStore` - wrapper around sessionStorage.
+
+Parameters:
+
+- `name` - Name for storing in storage.
+- `initial` - Initial object to put in storage. Default is `{}`.
