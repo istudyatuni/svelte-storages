@@ -21,6 +21,8 @@ yarn add -D svelte-storages
 
 ## Usage
 
+It's basically an object `{}` stored in the storage.
+
 ```js
 // store.js
 import { localStore } from 'svelte-storages'
