@@ -13,13 +13,13 @@
   "keywords": ["svelte"],
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write --plugin-search-dir=. ./**/*.js"
+    "format": "prettier --write --plugin-search-dir=. ./**/*.js ./**/*.ts"
   },
   "peerDependencies": {
-    "svelte": "^3.46.2"
+    "svelte": "^5"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
-    "svelte": "^3.46.2"
+    "svelte": "^5"
   }
 }
