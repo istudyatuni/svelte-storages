@@ -9,8 +9,13 @@
   },
   "bugs": "https://github.com/istudyatuni/svelte-storages/issues",
   "homepage": "https://github.com/istudyatuni/svelte-storages",
-  "repository": "github:istudyatuni/svelte-storages",
-  "keywords": ["svelte"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istudyatuni/svelte-storages.git"
+  },
+  "keywords": [
+    "svelte"
+  ],
   "license": "MIT",
   "scripts": {
     "format": "prettier --write --plugin-search-dir=. ./**/*.js ./**/*.ts"
